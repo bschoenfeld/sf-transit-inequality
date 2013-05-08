@@ -112,6 +112,19 @@
           </ul>
         </div>
 
+		<!-- HRT -->
+        <h5>HRT</h5>
+        <div class="agency-container">
+          <ul class="agency-routes nav nav-tabs nav-stacked">
+            <li data-ng-repeat="(routeId, route) in agencies['HRT'].routes">
+              <a href="#" data-ng-click="displayRoute('HRT', routeId)">
+                <span class="swatch" data-ng-style="{'background-color': route.color}"></span>
+                {{route.name}}
+              </a>
+            </li>
+          </ul>
+        </div>
+
 
         <h5>CalTrain</h5>
         <div class="agency-container">

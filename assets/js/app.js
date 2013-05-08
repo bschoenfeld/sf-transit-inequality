@@ -81,7 +81,7 @@ angular.module('app').controller('AppCtrl', ['$scope', 'DATA_SOURCES', function(
         vMargin = 20,
         dotRadius = 5,
         moneyFormat = d3.format(",");
-        yScale = d3.scale.linear().domain([120000, 0]).range([10, h - vMargin]);
+        yScale = d3.scale.linear().domain([140000, 0]).range([10, h - vMargin]);
         xScale = d3.scale.linear().domain([0, stops.length]).range([hMargin, w - hMargin]);
         xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(stops.length).tickFormat(function(d, i) {
             if (stops[i]) {
